@@ -64,4 +64,11 @@
     ```bash
     $ curl http://{C1 IP Address}
     ```
+
+10. Clean Up
+
+    ```bash
+    $ docker stop c1 c2
+    $ docker rm c1 c2
+    ```
     
