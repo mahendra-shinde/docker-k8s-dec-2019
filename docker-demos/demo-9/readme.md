@@ -8,7 +8,7 @@
         app:
             image: nginx
             ports: 
-            - "80"
+            - "8080:80"
             networks: 
             - net1
 
@@ -30,3 +30,4 @@
     ### Shutdown and destroy
     $ docker-compose down
     ```
+
