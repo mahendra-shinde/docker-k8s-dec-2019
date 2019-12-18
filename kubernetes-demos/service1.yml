@@ -4,10 +4,14 @@ kind: Service
 metadata:
   name: service1
 spec:
+  ## Service type: LoadBalancer (External), NodePort, ClusterIp
   type: LoadBalancer
+  ## Pick PODS using LABELS
   selector:
-    name: web1
+    app: app1
   ports:
+  ## Service port
   - port: 8080
-    targetPort: 80
+  ## Port on Containers (EndPoint)
+    targetPort: 3000
 
