@@ -1,6 +1,6 @@
 ## Replica Set demo
 
-1.  Create a replicaset using provided YAML (file)[./replica-set.yml].
+1.  Create a replicaset using provided YAML [file](./replica-set.yml).
 
 2.  Download the file and run following command to deploy replica set
 
