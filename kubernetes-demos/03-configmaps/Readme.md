@@ -31,17 +31,17 @@
         -   name: cm-pod
             image: nginx:1.7.9
         ### Setting ENVIRONMENT variables
-        env:
-        -   name: MYNAME
-            value: MAHENDRA
+            env:
+            -   name: MYNAME
+                value: MAHENDRA
         ### IMPORTING ENVIRONMENT variable from configmap
-        envFrom:
-        -   configMapRef:
-            name: myconfig
+            envFrom:
+            -   configMapRef:
+                  name: myconfig
         resources:
-        limits:
-            memory: "100Mi"
-            cpu: "100m"
+            limits:
+                memory: "100Mi"
+                cpu: "100m"
         ports:
         - containerPort: 80
     ```
