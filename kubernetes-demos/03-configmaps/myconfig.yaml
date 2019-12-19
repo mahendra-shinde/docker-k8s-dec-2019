@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfig
+data:
+  API_URL: http://back-end:8080/api/
+  DB_URL: db-connection-string
