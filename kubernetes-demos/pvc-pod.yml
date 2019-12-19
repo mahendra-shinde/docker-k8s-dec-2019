@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp
+spec:
+  volumes:
+    - name: datavol
+      persistentVolumeClaim:
+          claimName: mypvc1
+  containers:
+  - name: myapp
+    image: nginx:1.7.9
+    volumeMounts:
+      - mountPath: /data
+        name: datavol
+        readOnly: false
+          
+    ports:
+      - containerPort: 80
