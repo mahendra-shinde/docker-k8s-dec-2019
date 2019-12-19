@@ -11,7 +11,8 @@ spec:
   containers:   # list of containers (now SINGLE)
   # start of first (and only container)
   - name: web1  # name for container
-    image: nginx:1.7.9  # container image 
+    image: mahendrshinde/mysql-client:latest  # container image 
+    
     # Optional resource contraints
     resources:
       limits:
